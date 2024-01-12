@@ -12,10 +12,11 @@ displayed in the text box below the right color frame
 - You can copy the HEX code and the RGB values by right-clicking on
 the text, for use in another program
 The program works reading from a color list file in CSV format. A list of
-CMYK Process Uncoated colors is included in the file colors.txt (useful for
-artworks to be printed with InkJet or color Laser printers on regular
-office paper).
-You can edit this list to add or remove your custom colors or create a new list through the following procedure:
+CMYK Process Uncoated colors is included in the file colors.txt (useful
+ For artworks to be printed with InkJet or color Laser printers on
+Regular office paper).
+You can edit this list to add or remove your custom colors or create a
+ new list through the following procedure:
 - Create a text file with a text editor
 - Input each color in the format R,G,B [Enter], i.e.:
 
@@ -24,5 +25,16 @@ You can edit this list to add or remove your custom colors or create a new list 
 	37,94,158
 	and so on
 
-- Save the file with the name “colors.csv” and put it in the same
-folder as the program
+The program also understands GIMP palettes exported in text format. This
+palette format can be edited or created manually through a simple text
+editor and it contains a list of colors in HEX format, each on a separate
+row, as in the following example:
+
+- #24024e
+- #30014a
+- #130957
+
+- Save the file with the name “colors.txt” and put it in the same
+folder as the program. The palette format will be recognized
+automatically.
+Do not delete the file colors.txt or the program will crash.
